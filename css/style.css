@@ -1,0 +1,215 @@
+body, html {
+  height: 100%;
+  margin: auto;
+}
+
+.bg {
+  background-image:url("/images/bg-snow.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  position: relative;
+  float: right;
+  top: 35px;
+  right: 25px;
+  height: 100px;
+  width: 50px;
+  }
+
+.main {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.atas {
+    position: relative;
+    height: 87.5px;
+    width: 430px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 25%);
+    border-radius: 25px 25px 0px 0px;
+    background: #ffffff;
+}
+
+
+h1 {
+   font-family: 'Nunito', sans-serif;
+   position: relative;
+   left: 40px;
+   top: 10px;
+   font-size: 20px;
+   font-weight: bold;
+   color: #020238;
+}
+
+h2 {
+   font-family: 'Nunito', sans-serif;
+   position: relative;
+   left: 50px;
+   top: -7px;
+   font-size: 15px;
+   font-weight: bold;
+   color: #a0a0a0;
+
+}
+
+.midel {
+  padding: 32.5px 23px;
+  background: rgba(2, 2, 56, 0.05);
+}
+
+.container {
+  width: 360px;
+  height: 60px;
+  border-radius: 10px 10px 10px 10px;
+  background: rgba(2, 2, 56, 0.05);
+}
+
+.bawah {
+  position: relative;
+  height: 87.5px;
+  width: 430px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 25px 25px;
+  background: #ffffff;
+}
+
+/*tombol gan*/
+.explore {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20px;
+    float: right;
+    position: relative;
+    top: 25px;
+    right: 35px;
+    background-color: #020238; /* Green */
+    opacity: 25%;
+    border-radius: 25px 25px 25px 25px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+p1 {
+  font-family:  'Nunito', sans-serif;
+  font-size: 11px;
+}
+
+ul {
+  display: flex;
+  position: fixed;
+}
+
+ul li {
+  list-style:none;
+  width: 50px;
+}
+
+
+
+
+ul li a {
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+  display:block;
+  position: fixed;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.container ul li a:hover::after {
+  width: 50px;
+  height: 50px;
+  top: -50px;
+  }
+.container ul li a:after {
+  display: block;
+  content: '';
+  position: relative;
+  width: 0px;
+  height: 0px;
+  top: 10px;
+align-items: center;
+  background: #020238;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.25s;
+}
+
+
+
+
+}
+.fa-instagram {
+  color: #020238;
+}
+.fa-dribbble {
+  color: #020238;
+}
+.fa-behance {
+  color: #020238;
+}
+.fa-envelope {
+  color: #020238;
+}
+.fa-telegram-plane {
+  color: #020238;
+}
+.fa-linkedin {
+  color: #020238;
+}
+ul li a:hover .fa-instagram {
+  color: #fff;
+}
+ul li a:hover .fa-dribbble {
+  color: #fff;
+}
+ul li a:hover .fa-behance {
+  color: #fff;
+}
+ul li a:hover .fa-envelope {
+  color: #fff;
+}
+ul li a:hover .fa-telegram-plane {
+  color: #fff;
+}
+ul li a:hover .fa-linkedin {
+  color: #fff;
+}
+
+
+
+/*background icon
+.circle-bg {
+ color: #262626;
+ transition: .1s;
+ z-index: 3;
+}
+
+ul li a:hover .circlebg {
+  color: #fff;
+  transform: scale(50%);
+}
