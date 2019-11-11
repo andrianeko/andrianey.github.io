@@ -151,8 +151,7 @@ ul li a {
   position: relative;
   width: 0px;
   height: 0px;
-  top: 10px;
-align-items: center;
+  align-items: center;
   background: #020238;
   border-radius: 50%;
   z-index: -1;
