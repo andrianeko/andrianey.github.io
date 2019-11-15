@@ -3,12 +3,14 @@ body, html {
   margin: auto;
 }
 
+
 .bg {
-  background: url("../images/bg_snow.jpg");
   height: 100%;
+  width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  resize: none;
 }
 
 .logo {
@@ -160,6 +162,16 @@ ul li a {
 
 
 
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands'; }
 
 }
 .fa-instagram {
@@ -169,6 +181,7 @@ ul li a {
   color: #020238;
 }
 .fa-behance {
+  src: url("..images/icons/behance-brands.svg") format("svg");
   color: #020238;
 }
 .fa-envelope {
