@@ -184,6 +184,7 @@ ul li a {
 }
 ul li a:hover .fa-instagram {
   color: #fff;
+  box-shadow: 2px 5px 5px rgba(234, 31, 114, 0.15);
 }
 ul li a:hover .fa-dribbble {
   color: #fff;
