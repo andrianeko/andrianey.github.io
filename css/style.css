@@ -155,7 +155,7 @@ ul li a:hover {
   position: fixed;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 2px 5px 5px rgba(234, 31, 114, 0.25);
+  box-shadow: 2px 5px 5px rgba(234, 31, 114, 1);
   z-index: 1;
 }
 
