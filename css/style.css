@@ -146,7 +146,7 @@ ul li a {
 }
 
 ul li a:hover .a {
-  box-shadow: 2px 5px 5px rgba(234, 31, 114, 1);
+  box-shadow: 2px 5px 5px rgba(234, 31, 114, 50);
   z-index: 1;
 }
 
