@@ -96,25 +96,24 @@ h2 {
 /*tombol gan*/
 .explore {
     display: flex;
-    flex-direction: row;
-    flex-basis: 20px;
     float: right;
     position: relative;
     top: 25px;
     right: 35px;
-    background-color: #020238; /* Green */
+    background-color: #020238; 
     opacity: 25%;
     border-radius: 25px 25px 25px 25px;
     color: white;
     padding: 10px 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    align-content: center;
 }
 
 p1 {
   font-family:  'Nunito', sans-serif;
   font-size: 11px;
+  text-align: center;
+  align-content: center;
 }
 
 ul {
@@ -137,7 +136,7 @@ ul li a {
   text-align: center;
   line-height: 35px;
   font-size: 20px;
-  display:block;
+  display: inline-block;
   position: fixed;
   border-radius: 50%;
   overflow: hidden;
@@ -170,22 +169,22 @@ ul li a:hover {
 
 
 .fa-instagram {
-  color: #ea1f72;
+  color: #020238;
 }
 .fa-dribbble {
-  color: #c32361;
+  color: #020238;
 }
 .fa-behance {
-  color: #0057ff;
+  color: #020238;
 }
 .fa-envelope {
-  color: #d72b27;
+  color: #020238;
 }
 .fa-telegram-plane {
-  color: #37aee2;
+  color: #020238;
 }
-.fa-linkedin {
-  color: #2668b2;
+.fa-linkedin-in {
+  color: #020238;
 }
 ul li a:hover .fa-instagram {
   color: #fff;
@@ -202,7 +201,7 @@ ul li a:hover .fa-envelope {
 ul li a:hover .fa-telegram-plane {
   color: #fff;
 }
-ul li a:hover .fa-linkedin {
+ul li a:hover .fa-linkedin-in {
   color: #fff;
 }
 
