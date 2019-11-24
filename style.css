@@ -10,10 +10,7 @@ body {
   background: #485563;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
-
-
 
 #top {
   width: 100%;
@@ -73,22 +70,22 @@ background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, 
 .card h1 {
   font-family: 'Nunito', sans-serif;
   position: absolute;
-  top: 35px;
-  left: 70px;
-  font-size: 17px;
+  top: 30px;
+  left: 65px;
+  font-size: 20px;
   font-weight: bold;
   color: #020238;
-  transform: translateZ(80px);
+  transform: translateZ(100px);
 }
 .card h2 {
   font-family: 'Nunito', sans-serif;
   position: absolute;
   top: 50px;
-  left: 75px;
-  font-size: 14px;
+  left: 70px;
+  font-size: 16px;
   font-weight: bold;
   color: #a0a0a0;
-  transform: translateZ(70px);
+  transform: translateZ(90px);
 }
 
 .logo {
@@ -96,7 +93,7 @@ background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, 
   float: right;
   top: 52px;
   right: 70px;
-  transform: translateZ(80px);
+  transform: translateZ(90px);
 }
 
 
@@ -134,34 +131,28 @@ ul li a {
 }
 
 
-.tks h3 {
+h3 {
   font-family: 'Nunito', sans-serif;
-  position: absolute;
-  bottom: 38px;
-  right: 60px;
+  position: relative;
   color: white;
   font-size: 12px;
   font-weight: bold;
   transform: translateZ(100px);
 }
-
-.explore {
-  display: flex;
-  float: right;
-  position: relative;
-  top: -75px;
-  width: 90px;
-  right: 70px;
-  background-color: #020238; 
-  opacity: 100%;
-  border-radius: 25px;
-  box-shadow: 0 70px 63px #000000;
-  color: white;
-  padding: 5px 5px;
-  text-align: left;
+/*
+.explore{
+  padding: 10px;
+  border-radius:25;
+  outline: none;
+  text-align: center;
   align-content: center;
-  transform: translateZ(80px);
+  align-items: center;
+}
+.explore :hover{
+  background-color: #020238;
+ 
   }
+  */
 
 .card span{
   font-family: 'Nunito', sans-serif;
@@ -254,4 +245,118 @@ img {
   margin: auto;
   display: block;
   border-radius: 1px;
+}
+
+
+
+
+/*BUTTTON*/
+
+
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+
+button {
+  position: relative;
+  float: right;
+  right: 70px;
+  bottom: 80px;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  transform: translateZ(80px);
+}
+button.learn-more {
+  width: 8rem;
+  height: auto;
+}
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+  background: #282936;
+  border-radius: 1.5rem;
+}
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.6rem;
+  width: 0.5rem;
+  height: 0.1rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.4rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+
+@supports (display: grid) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: ". main main ." ". main main .";
+  }
+
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
 }
