@@ -1,4 +1,4 @@
-var o = $(".atas");
+var o = $(".card");
 $("#top").on("mousemove", function (t) {
     var e = -($(window).innerWidth() / 2 - t.pageX) / 30,
         n = ($(window).innerHeight() / 2 - t.pageY) / 10;
