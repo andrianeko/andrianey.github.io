@@ -100,8 +100,8 @@ background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, 
 
 .soc {
   position: absolute;
-  top: 40%;
-  right: 90%;
+  bottom: 170px;
+  left: 15px;
   
 }
 
