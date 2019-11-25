@@ -4,3 +4,8 @@ $("#top").on("mousemove", function (t) {
         n = ($(window).innerHeight() / 2 - t.pageY) / 10;
     o.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)")
 })
+
+function Exp(){
+        window.location='http://bit.ly/2nmipMR';
+    }
+    
