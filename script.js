@@ -1,11 +1,4 @@
-var o = $(".card");
-$("#top").on("mousemove", function (t) {
-    var e = -($(window).innerWidth() / 2 - t.pageX) / 30,
-        n = ($(window).innerHeight() / 2 - t.pageY) / 10;
-    o.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)")
-})
-
-function Exp(){
-        window.location='http://bit.ly/2nmipMR';
-    }
-    
+function NewTab() { 
+            window.open( 
+              "https://bit.ly/2nmipMR","_self"); 
+        } 
