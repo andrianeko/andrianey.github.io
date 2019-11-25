@@ -327,15 +327,14 @@ button.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   font-family: 'Nunito', sans-serif;
-  top: 0.15rem;
+  top: 0.28rem;
   left: 2.5rem;
   right: 0;
   bottom: 0;
-  padding: 0 5;
+  padding: 0 0;
   margin: 0 0 0 0;
   color: #29323c;
   font-weight: bold;
-  line-height: 1.8;
   text-align: left;
  }
 button:hover .circle {
