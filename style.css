@@ -178,7 +178,7 @@ ul li a:hover::after {
   background: #020238;
   border-radius: 100%;
   z-index: -1;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
 ul li a:after {
@@ -200,45 +200,51 @@ ul li a:after {
 
 .fa-instagram {
   color: #ea1f72;
+  transition-duration: 0.2s;
 }
 .fa-dribbble {
   color: #c32361;
+  transition-duration: 0.2s;
 }
 .fa-behance {
   color: #0057ff;
+  transition-duration: 0.2s;
 }
 .fa-envelope {
   color: #d72b27;
+  transition-duration: 0.2s;
 }
 .fa-telegram-plane {
   color: #37aee2;
+  transition-duration: 0.2s;
 }
 .fa-linkedin-in {
   color: #2668b2;
+  transition-duration: 0.2s;
 }
 ul li a:hover .fa-instagram {
   color: #fff;
-  transition: 0.1s;
+  transition-duration: 0.1s;
 }
 ul li a:hover .fa-dribbble {
   color: #fff;
-  transition: 0.1s;
+  transition-duration: 0.1s;
 }
 ul li a:hover .fa-behance {
   color: #fff;
-  transition: 0.1s;
+  transition-duration: 0.1s;
 }
 ul li a:hover .fa-envelope {
   color: #fff;
-  transition: 0.1s;
+  transition-duration: 0.1s;
 }
 ul li a:hover .fa-telegram-plane {
   color: #fff;
-  transition: 0.1s;
+  transition-duration: 0.1s;
 }
 ul li a:hover .fa-linkedin-in {
   color: #fff;
-  transition: 0.1s;
+  transition-duration: 0.1s;
 }
 
 img {
