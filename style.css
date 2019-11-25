@@ -120,10 +120,8 @@ ul li a {
   width: 35px;
   height: 35px;
   background-color: #fff;
-  text-align: center;
-  vertical-align: middle;
   line-height: 2.3rem;
-  font-size: 15px;
+  font-size: 18px;
   position: fixed;
   border-radius: 50%;
   overflow: hidden;
