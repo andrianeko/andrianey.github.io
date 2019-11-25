@@ -122,6 +122,7 @@ ul li a {
   background-color: #fff;
   text-align: center;
   align-content: center;
+  vertical-align: middle;
   line-height: 35px;
   font-size: 20px;
   position: fixed;
@@ -234,7 +235,7 @@ ul li a:hover .fa-envelope {
   color: #fff;
   transition: 0.1s;
 }
-ul li a :hover .fa-telegram-plane {
+ul li a:hover .fa-telegram-plane {
   color: #fff;
   transition: 0.1s;
 }
@@ -305,7 +306,7 @@ button.learn-more .circle .icon {
 }
 button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  left: 0.7rem;
+  left: 0.74rem;
   width: 0.4rem;
   height: 0.12rem;
   background: none;
@@ -326,14 +327,14 @@ button.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   font-family: 'Nunito', sans-serif;
-  top: 0.19rem;
-  left: 0.9rem;
+  top: 0.15rem;
+  left: 2.5rem;
   right: 0;
   bottom: 0;
   padding: 0 5;
   margin: 0 0 0 0;
-  color: rgba(0,0,0,0);
-  font-weight: 700;
+  color: #29323c;
+  font-weight: bold;
   line-height: 1.8;
   text-align: left;
  }
@@ -347,6 +348,7 @@ button:hover .circle .icon.arrow {
 }
 button:hover .button-text {
   color: #fff;
+  left: 0.9rem
 }
 
 @supports (display: grid) {
