@@ -114,6 +114,7 @@ ul {
 ul li {
   list-style: none;
   width: 50px;
+  cursor: pointer;
 }
 ul li a {
   width: 35px;
@@ -233,7 +234,7 @@ ul li a:hover .fa-envelope {
   color: #fff;
   transition: 0.1s;
 }
-ul li a:hover .fa-telegram-plane {
+ul li a :hover .fa-telegram-plane {
   color: #fff;
   transition: 0.1s;
 }
