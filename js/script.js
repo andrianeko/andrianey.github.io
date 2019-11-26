@@ -1,6 +1,36 @@
-var o = $(".atas");
-$("#top").on("mousemove", function (t) {
-    var e = -($(window).innerWidth() / 2 - t.pageX) / 30,
-        n = ($(window).innerHeight() / 2 - t.pageY) / 10;
-    o.attr("style", "transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-webkit-transform: rotateY(" + e + "deg) rotateX(" + n + "deg);-moz-transform: rotateY(" + e + "deg) rotateX(" + n + "deg)")
-})
+function NewTab() { 
+            window.open( 
+              "https://bit.ly/2nmipMR","_self"); 
+        } 
+
+function Instagram() { 
+            window.open( 
+              "https://instagram.com/andrian.ey","_self"); 
+        } 
+
+function Dribbble() { 
+            window.open( 
+              "https://dribbble.com/andrianey","_self"); 
+        } 
+
+function Behance() { 
+            window.open( 
+              "https://behance.net/andrianey","_self"); 
+        } 
+
+function Email() { 
+            window.open( 
+              "mailto@andrianeko.037@gmail.com","_self"); 
+        } 
+
+function Telegram() { 
+            window.open( 
+              "https://t.me/andrianey","_self"); 
+        } 
+
+
+function LinkedIn() { 
+            window.open( 
+              "https://Linkedin.com/in/andrianey","_self"); 
+        } 
+
