@@ -72,7 +72,7 @@ background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, 
   position: absolute;
   top: 30px;
   left: 65px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 800;
   color: #29323c;
   transform: translateZ(100px);
@@ -82,7 +82,7 @@ background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, 
   position: absolute;
   top: 52px;
   left: 75px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #a0a0a0;
   transform: translateZ(90px);
@@ -92,7 +92,7 @@ background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, 
   position: absolute;
   pointer-events: none;
   float: right;
-  top: 40px;
+  top: 44px;
   right: 70px;
   transform: translateZ(90px);
 }
@@ -100,7 +100,7 @@ background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, 
 
 .soc {
   position: absolute;
-  bottom: 175px;
+  bottom: 170px;
   left: 15px;
   
 }
