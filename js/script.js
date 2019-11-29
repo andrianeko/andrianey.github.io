@@ -1,3 +1,7 @@
+$(window).load(function() {
+   $('.preloader').fadeOut('3');
+});
+
 function NewTab() { 
             window.open( 
               "https://bit.ly/2nmipMR","_self"); 
@@ -33,4 +37,3 @@ function LinkedIn() {
             window.open( 
               "https://Linkedin.com/in/andrianey","_self"); 
         } 
-
