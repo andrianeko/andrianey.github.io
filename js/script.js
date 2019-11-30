@@ -1,5 +1,8 @@
 $(window).load(function() {
-   $('.preloader').fadeOut('3');
+   $('.preloader').fadeOut('slow');
+   setTimeout(function(){    
+  $(".preloader").fadeOut();
+}, 1000);
 });
 
 function NewTab() { 
