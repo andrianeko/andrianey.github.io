@@ -35,8 +35,7 @@ background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, 
   justify-content: center;
   margin: auto;
   position: fixed;
-  animation: entrance 0.8s ease-out;
-}
+ } 
 
 .card {
   width: 450px;
