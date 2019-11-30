@@ -24,7 +24,7 @@ function Behance() {
 
 function Email() { 
             window.open( 
-              "mailto@andrianeko.037@gmail.com","_self"); 
+              "mailto:andrianeko.037@gmail.com","_self"); 
         } 
 
 function Telegram() { 
