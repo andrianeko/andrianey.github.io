@@ -2,7 +2,7 @@ $(window).load(function() {
    $('.preloader').fadeOut('slow');
    setTimeout(function(){    
   $(".preloader").fadeOut();
-}, 1000);
+}, 2000);
 });
 
 function NewTab() { 
