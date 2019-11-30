@@ -1,7 +1,11 @@
 $(window).load(function() {
    $('.preloader').fadeOut('slow');
 });
-
+window.addEventListener('load' , function(){
+  function start(){
+    document.getElementById('Top').style.animation = "entrance 0.8s ease-out";
+  }
+});
 function NewTab() { 
             window.open( 
               "https://bit.ly/2nmipMR","_self"); 
