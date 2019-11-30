@@ -221,22 +221,22 @@ h3 {
   transition-duration: 0.2s;
 }
 */
-ul li a:hover .fa-instagram {
+ul li:hover .fa-instagram {
   color: #ea1f72;
 }
-ul li a:hover .fa-dribbble {
+ul li:hover .fa-dribbble {
   color: #c32361;
 }
-ul li a:hover .fa-behance {
+ul li:hover .fa-behance {
   color: #0057ff;
 }
-ul li a:hover .fa-envelope {
+ul li:hover .fa-envelope {
   color: #d72b27;
 }
-ul li a:hover .fa-telegram-plane {
+ul li:hover .fa-telegram-plane {
   color: #37aee2;
 }
-ul li a:hover .fa-linkedin-in {
+ul li:hover .fa-linkedin-in {
   color: #2668b2;
 }
 img {
