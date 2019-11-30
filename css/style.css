@@ -115,7 +115,7 @@ background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, 
 .social-inner li {
   display: inline-block;
   position: relative;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 4px;
   cursor: pointer;
   height: 35px;
@@ -126,8 +126,8 @@ background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, 
 .social-inner i {
   color:#29323c;
   position: absolute;
-  top: 8px;
-  left: 9px;
+  top: 9px;
+  left: 10px;
   transition: all 200ms ease-out;
   transform: translateZ(55px);
  }
@@ -137,7 +137,6 @@ background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, 
 
 }
 .social-inner a:before {
-  transform: scale(1);
   content:" ";
   width: 35px;
   height: 35px;
