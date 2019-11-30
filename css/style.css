@@ -98,36 +98,69 @@ background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, 
 }
 
 
-.soc {
+.social-container {
   position: absolute;
-  bottom: 175px;
-  left: 15px;
-  
-}
+  bottom: 110px;
+  text-align: center;
+  width: 400px;
+  align-content: center;
+  }
 
-ul {
-  display: flex;
-  position: fixed;
-  transform: translateZ(50px);
-}
-
-ul li {
+.social-inner {
   list-style: none;
-  width: 50px;
-  cursor: pointer;
+  text-align: center;
+  align-content: center;
 }
-ul li a {
+
+.social-inner li {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin: 4px;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+
+}
+
+.social-inner i {
+  color:#29323c;
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  transition: all 200ms ease-out;
+  transform: translateZ(55px);
+ }
+
+.social-inner a {
+  display: inline-block;
+
+}
+.social-inner a:before {
+  transform: scale(1);
+  content:" ";
   width: 35px;
   height: 35px;
   background-color: #fff;
-  line-height: 2.3rem;
-  font-size: 20px;
-  position: fixed;
-  border-radius: 50%;
-  overflow: hidden;
+  display: block;
+  border-radius: 35%;
   box-shadow: 0px 25px 35px -10px #000000;
-  z-index: 1;
   transform: translateZ(50px);
+  transition: all 300ms ease-out;
+}
+
+.social-inner li a:hover:before {
+  transform: scale(0.1);
+  opacity: 0%;
+  border-radius: 100%;
+  transition: all 200ms ease-in;
+}
+.social-inner li:hover i{
+  transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transition: all 200ms ease-out;
+
 }
 
 
@@ -161,42 +194,8 @@ h3 {
 }
   
 
-ul li a:hover {
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-  transition: 0.2s;
 
-  }
-
-ul li a:hover::after {
-  display: block;
-  content: '';
-  position: relative;
-  top: -40px;
-  right: 10px;
-  width: 50px;
-  height: 50px;
-  background: #020238;
-  border-radius: 100%;
-  z-index: -1;
-  transition: 0.25s;
-}
-
-ul li a:after {
-  display: block;
-  content: '';
-  position: relative;
-  width: 0px;
-  top: -5px;
-  right: -25px;
-  height: 0px;
-  align-content: center;
-  align-items: center;
-  background: #020238;
-  border-radius: 0%;
-  z-index: -1;
-  transition: 0.1s;
-}
-
+/*
 
 .fa-instagram {
   color: #ea1f72;
@@ -222,31 +221,25 @@ ul li a:after {
   color: #2668b2;
   transition-duration: 0.2s;
 }
+*/
 ul li a:hover .fa-instagram {
-  color: #fff;
-  transition-duration: 0.1s;
+  color: #ea1f72;
 }
 ul li a:hover .fa-dribbble {
-  color: #fff;
-  transition-duration: 0.1s;
+  color: #c32361;
 }
 ul li a:hover .fa-behance {
-  color: #fff;
-  transition-duration: 0.1s;
+  color: #0057ff;
 }
 ul li a:hover .fa-envelope {
-  color: #fff;
-  transition-duration: 0.1s;
+  color: #d72b27;
 }
 ul li a:hover .fa-telegram-plane {
-  color: #fff;
-  transition-duration: 0.1s;
+  color: #37aee2;
 }
 ul li a:hover .fa-linkedin-in {
-  color: #fff;
-  transition-duration: 0.1s;
+  color: #2668b2;
 }
-
 img {
   margin: auto;
   display: block;
