@@ -3,7 +3,7 @@ $(window).load(function() {
 });
 window.addEventListener('load' , function(){
   function start(){
-    document.getElementById('Top').style.animation = "entrance 0.8s ease-out";
+  document.getElementById('Top').style.animation = "entrance 0.8s ease-out";
   }
 });
 function NewTab() { 
