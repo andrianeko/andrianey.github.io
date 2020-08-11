@@ -183,26 +183,26 @@ ul#worktype-item-wrapper {
     -10px -10px 55px rgba(255, 255, 255, 0.75);
 }
 #itemstyle:hover #svganim {
-  stroke-dasharray: 200;
-  stroke-dashoffset: 200;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 110;
   animation: svg_draw 1500ms ease-in-out 500ms forwards;
-  -webkit-animation: svg_draw 1500ms ease-in-out 500ms forwards;
-  -moz-animation: svg_draw 2000ms ease-in-out 20ms forwards;
+  -webkit-animation: svg_draw 1500ms ease-in-out 350ms forwards;
+  -moz-animation: svg_draw 2500ms ease-in-out forwards;
   -webkit-transition: 100ms ease-in;
   -moz-transition: 100ms ease-in-out;
 }
 
 #itemstyle:hover #icostroke {
-  stroke-dasharray: 220;
-  stroke-dashoffset: 220;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 110;
   animation: svg_draw 1500ms ease-out 100ms forwards;
-  -webkit-animation: svg_draw 1000ms ease-in-out 100ms forwards;
-  -moz-animation: svg_draw 1500ms ease-in-out 100ms forwards;
+  -webkit-animation: svg_draw 1500ms ease-in-out forwards;
+  -moz-animation: svg_draw 1500ms ease-in-out forwards;
 }
 
 @keyframes svg_draw {
   100% {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 20;
     stroke-dasharray: 250;
   }
 }
@@ -217,7 +217,7 @@ ul#worktype-item-wrapper {
   stroke: white;
   transition: 250ms ease-in-out;
   -webkit-transition: 250ms ease-in-out;
-  -moz-transition: 50ms ease-out;
+  -moz-transition: 120ms ease;
 }
 
 #itemstyle:hover .itemtext {
@@ -266,9 +266,7 @@ ul#worktype-item-wrapper {
 
   /* Std Indigo */
 }
-.show {
-  width: 100%;
-}
+
 .content {
   display: flex;
   align-items: center;
