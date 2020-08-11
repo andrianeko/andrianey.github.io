@@ -1,0 +1,39 @@
+<svg width="200" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="icofill" opacity="0.1"
+            d="M64.39 55.24V111.13C64.39 116.653 68.8672 121.13 74.39 121.13H127.46C132.983 121.13 137.46 116.653 137.46 111.13V55.24C137.46 49.7172 132.983 45.24 127.46 45.24H74.39C68.8672 45.24 64.39 49.7172 64.39 55.24Z"
+            fill="#020238" />
+          <path id="icofill" opacity="0.1"
+            d="M13.83 41.25L13.83 90.18C13.83 95.7028 18.3071 100.18 23.83 100.18H99.48C105.003 100.18 109.48 95.7028 109.48 90.18V41.25C109.48 35.7271 105.003 31.25 99.48 31.25H23.83C18.3071 31.25 13.83 35.7271 13.83 41.25Z"
+            fill="#020238" />
+          <path id="icostroke"
+            d="M80.47 38.79H26.52C23.7586 38.79 21.52 41.0286 21.52 43.79V87.9C21.52 90.6614 23.7586 92.9 26.52 92.9H80.47C83.2314 92.9 85.47 90.6614 85.47 87.9V43.79C85.47 41.0286 83.2314 38.79 80.47 38.79Z"
+            stroke="#020238" stroke-width="2.07" stroke-miterlimit="10" />
+          <path id="icostroke" d="M28.08 44.26L78.91 87.43" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M78.91 44.26L28.08 87.43" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            d="M120.49 38.79H98.46C94.8536 38.79 91.93 41.7136 91.93 45.32C91.93 48.9264 94.8536 51.85 98.46 51.85H120.49C124.096 51.85 127.02 48.9264 127.02 45.32C127.02 41.7136 124.096 38.79 120.49 38.79Z"
+            stroke="#FFF119" stroke-width="2" stroke-miterlimit="10" />
+          <path id="icostroke" d="M99.55 61.4H125.79" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M93.16 68.66H125.79" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M93.16 75.92H125.79" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M93.16 83.18H125.79" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M93.16 90.44H113.61" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke"
+            d="M122.8 112.23C124.672 112.23 126.19 110.712 126.19 108.84C126.19 106.968 124.672 105.45 122.8 105.45C120.928 105.45 119.41 106.968 119.41 108.84C119.41 110.712 120.928 112.23 122.8 112.23Z"
+            stroke="#020238" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="icostroke" d="M122.8 102.98V114.7" stroke="#020238" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M116.95 108.84H128.66" stroke="#020238" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M25.54 108.84V114.7" stroke="#020238" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M19.69 108.84H25.54" stroke="#020238" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
