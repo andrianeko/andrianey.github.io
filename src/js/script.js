@@ -59,17 +59,3 @@ $(window).load(function() {
           $( ".showtext-wrapper" ).removeClass("active");
           $( ".showimage-wrapper" ).removeClass("active");
         });
-         gsap
-        .timeline({
-          repeat: -1,
-          defaults: {
-            duration: 3
-          }
-        })
-        .to('.id-container', {
-          y: 50,
-        })
-        .to('.id-container', {
-          y:0,})
-        ;
-      
