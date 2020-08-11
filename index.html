@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>You are viewing under maintenance website</title>
+  <meta name="description" content="The HTML 5" />
+  <meta name="author" content="Andrian Eko" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./src/css/stylecopy.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Nunito+Sans:wght@400;700&family=Roboto&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/TextPlugin.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+  <div class="header-wrapper">
+    <div class="logo-wrapper">
+      <svg class="logo" alt="logo" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <rect width="20" height="20.1333" fill="url(#pattern0)"/>
+        <defs>
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlink:href="#image0" transform="scale(0.00666667)"/>
+        </pattern>
+        <image id="image0" width="150" height="151" xlink:href="data:image/png;base64,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"/>
+        </defs>
+        </svg> 
+    </div>
+  </div>
+  <div class="grid-wrapper">
+
+    <div class="atas-wrapper">
+      <div class="kiri">
+        <div class="id-container">
+          <div class="rope"></div>
+          <div class="card-wrapper">
+            <div class="card-shadow"></div>
+            <svg id="mask" width="272" height="474" viewBox="0 0 272 474" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <clipPath id="masked">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16 0C7.16344 0 0 7.16346 0 16V458C0 466.837 7.16344 474 16 474H256C264.837 474 272 466.837 272 458V16C272 7.16344 264.837 0 256 0H16ZM105 18C100.582 18 97 21.5817 97 26V28C97 32.4183 100.582 36 105 36H166C170.418 36 174 32.4183 174 28V26C174 21.5817 170.418 18 166 18H105Z"
+                  fill="#C4C4C4" />
+              </clipPath>
+            </svg>
+
+            <div class="card-container">
+
+              <div class="card-logo"></div>
+
+              <div class="card-design"></div>
+
+              <div class="pic-wrapper">
+                <svg id="shadow" width="144" height="122" viewBox="0 0 144 122" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.35" filter="url(#filter0_f)">
+                    <path d="M118.1 100.4L25 103L44.8 68.4L46.2 25H96.1L96.5 61.4L118.1 100.4Z" fill="#020238" />
+                  </g>
+                  <defs>
+                    <filter id="filter0_f" x="0" y="0" width="143.1" height="128" filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                      <feGaussianBlur stdDeviation="12.5" result="effect1_foregroundBlur" />
+                    </filter>
+                  </defs>
+                </svg>
+                <div class="me"></div>
+              </div>
+
+              <div class="text-container">
+                <p class="name">Andrian Eko</p>
+                <p class="as">Graphic Designer</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-glow">
+          </div>
+        </div>
+      </div>
+      <div class="kanan">
+        <div class="greeting-container">
+          <p class="greeting">Hello...</p>
+        </div>
+         
+          <p class="about">My name is Andrian Eko, i'm a graphic designer based in East Java, Indonesia. With more than 2 years of experience, my goal is to create reliable communication by visual media.</p>
+        </div>
+        
+    
+    </div>
+
+     <ul id="worktype-item-wrapper">
+      <li id="itemstyle" class="item1">
+        <svg id="svganim" width="200" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="icofill" opacity="0.1"
+            d="M64.39 55.24V111.13C64.39 116.653 68.8672 121.13 74.39 121.13H127.46C132.983 121.13 137.46 116.653 137.46 111.13V55.24C137.46 49.7172 132.983 45.24 127.46 45.24H74.39C68.8672 45.24 64.39 49.7172 64.39 55.24Z"
+            fill="#020238" />
+          <path id="icofill" opacity="0.1"
+            d="M13.83 41.25L13.83 90.18C13.83 95.7028 18.3071 100.18 23.83 100.18H99.48C105.003 100.18 109.48 95.7028 109.48 90.18V41.25C109.48 35.7271 105.003 31.25 99.48 31.25H23.83C18.3071 31.25 13.83 35.7271 13.83 41.25Z"
+            fill="#020238" />
+          <path id="icostroke"
+            d="M80.47 38.79H26.52C23.7586 38.79 21.52 41.0286 21.52 43.79V87.9C21.52 90.6614 23.7586 92.9 26.52 92.9H80.47C83.2314 92.9 85.47 90.6614 85.47 87.9V43.79C85.47 41.0286 83.2314 38.79 80.47 38.79Z"
+            stroke="#020238" stroke-width="2.07" stroke-miterlimit="10" />
+          <path id="icostroke" d="M28.08 44.26L78.91 87.43" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M78.91 44.26L28.08 87.43" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            d="M120.49 38.79H98.46C94.8536 38.79 91.93 41.7136 91.93 45.32C91.93 48.9264 94.8536 51.85 98.46 51.85H120.49C124.096 51.85 127.02 48.9264 127.02 45.32C127.02 41.7136 124.096 38.79 120.49 38.79Z"
+            stroke="#FFF119" stroke-width="2" stroke-miterlimit="10" />
+          <path id="icostroke" d="M99.55 61.4H125.79" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M93.16 68.66H125.79" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M93.16 75.92H125.79" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M93.16 83.18H125.79" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M93.16 90.44H113.61" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke"
+            d="M122.8 112.23C124.672 112.23 126.19 110.712 126.19 108.84C126.19 106.968 124.672 105.45 122.8 105.45C120.928 105.45 119.41 106.968 119.41 108.84C119.41 110.712 120.928 112.23 122.8 112.23Z"
+            stroke="#020238" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="icostroke" d="M122.8 102.98V114.7" stroke="#020238" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M116.95 108.84H128.66" stroke="#020238" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M25.54 108.84V114.7" stroke="#020238" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M19.69 108.84H25.54" stroke="#020238" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <div class="itemtext"><span class="weighted">Layout</span><br> & Publishing</div>
+      </li>
+      <li id="itemstyle" class="item2">
+        <svg id="svganim" width="200" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="icofill" opacity="0.1" d="M27.5199 81.51H71.9399C77.4628 81.51 81.9399 77.0329 81.9399 71.51V38.25C81.9399 32.7272 77.4628 28.25 71.9399 28.25L27.5199 28.25C21.9971 28.25 17.5199 32.7272 17.5199 38.25V71.51C17.5199 77.0329 21.9971 81.51 27.5199 81.51Z" fill="#020238"/>
+          <path id="icofill" opacity="0.1" d="M60.5801 113.44L115.84 113.44C121.363 113.44 125.84 108.963 125.84 103.44V75.88C125.84 70.3572 121.363 65.88 115.84 65.88H60.5801C55.0572 65.88 50.5801 70.3572 50.5801 75.88V103.44C50.5801 108.963 55.0572 113.44 60.5801 113.44Z" fill="#020238"/>
+          <path id="icostroke" d="M76.24 54.84H89.35" stroke="#020238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="icostroke" d="M73.04 62.1H89.35" stroke="#020238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="icostroke" d="M73.04 69.36H89.35" stroke="#020238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="icostroke" d="M73.04 76.62H89.35" stroke="#020238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="icostroke" d="M73.04 83.88H83.26" stroke="#020238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="icostroke" d="M53.0001 59.42C50.4298 59.4187 47.9045 60.0946 45.6785 61.3797C43.4525 62.6647 41.6043 64.5135 40.3201 66.74C41.6048 68.9662 43.453 70.8149 45.6789 72.1003C47.9047 73.3857 50.4297 74.0624 53.0001 74.0624C55.5704 74.0624 58.0954 73.3857 60.3213 72.1003C62.5471 70.8149 64.3953 68.9662 65.6801 66.74C64.3958 64.5135 62.5476 62.6647 60.3216 61.3797C58.0956 60.0946 55.5704 59.4187 53.0001 59.42V59.42Z" stroke="#020238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M52.9701 70.37C54.9749 70.37 56.6001 68.7448 56.6001 66.74C56.6001 64.7352 54.9749 63.11 52.9701 63.11C50.9653 63.11 49.3401 64.7352 49.3401 66.74C49.3401 68.7448 50.9653 70.37 52.9701 70.37Z" stroke="#FFF119" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path id="icostroke" d="M86.92 47.85H41.74C36.2171 47.85 31.74 52.3271 31.74 57.85V80.12C31.74 85.6428 36.2171 90.12 41.74 90.12H86.92C92.4428 90.12 96.92 85.6428 96.92 80.12V57.85C96.92 52.3271 92.4428 47.85 86.92 47.85Z" stroke="#020238" stroke-width="2" stroke-miterlimit="10"/>
+          <path id="icostroke" d="M65.6499 120.55V109.72C65.6499 107.068 66.7035 104.524 68.5788 102.649C70.4542 100.774 72.9977 99.72 75.6499 99.72H76.3499C79.0021 99.72 81.5456 100.774 83.421 102.649C85.2963 104.524 86.3499 107.068 86.3499 109.72V121.45C86.3499 124.102 87.4035 126.646 89.2788 128.521C91.1542 130.396 93.6977 131.45 96.3499 131.45H97.9299C100.582 131.45 103.126 130.396 105.001 128.521C106.876 126.646 107.93 124.102 107.93 121.45C107.93 118.798 107.93 86.1501 107.93 86.1501C107.93 83.4979 108.984 80.9544 110.859 79.079C112.734 77.2036 115.278 76.1501 117.93 76.1501L121.56 76.19C124.212 76.19 126.756 75.1364 128.631 73.2611C130.506 71.3857 131.56 68.8422 131.56 66.19L131.56 53.47M131.56 53.47L128.25 56.78M131.56 53.47L134.87 56.78" stroke="#020238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>          
+        <div class="itemtext">
+          <span class="weighted">Visual</span><br> Identity</div>
+        </li>
+      <li id="itemstyle" class="item3">
+        <svg id="svganim" width="200" height="150" viewBox="0 0 150 150" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path id="icofill" opacity="0.1"
+            d="M32.54 80.77V123.77C32.54 129.293 37.0172 133.77 42.54 133.77H119.23C124.753 133.77 129.23 129.293 129.23 123.77V80.77C129.23 75.2472 124.753 70.77 119.23 70.77H42.54C37.0172 70.77 32.54 75.2472 32.54 80.77Z"
+            fill="#020238" />
+          <path id="icofill" opacity="0.1"
+            d="M31.03 123.99H59.04C64.5629 123.99 69.04 119.513 69.04 113.99L69.04 36.76C69.04 31.2371 64.5629 26.76 59.04 26.76H31.03C25.5072 26.76 21.03 31.2371 21.03 36.76L21.03 113.99C21.03 119.513 25.5072 123.99 31.03 123.99Z"
+            fill="#020238" />
+          <path
+            d="M70.47 76.73H45.82C42.2136 76.73 39.29 79.6536 39.29 83.26C39.29 86.8664 42.2136 89.79 45.82 89.79H70.47C74.0764 89.79 77 86.8664 77 83.26C77 79.6536 74.0764 76.73 70.47 76.73Z"
+            stroke="#FFF119" stroke-width="2" stroke-miterlimit="10" />
+          <path id="icostroke"
+            d="M74.51 48.7V57.7C74.51 59.5565 73.7725 61.337 72.4598 62.6497C71.147 63.9625 69.3665 64.7 67.51 64.7H46.16C44.3035 64.7 42.523 63.9625 41.2103 62.6497C39.8975 61.337 39.16 59.5565 39.16 57.7V25.61C39.16 23.7535 39.8975 21.973 41.2103 20.6602C42.523 19.3475 44.3035 18.61 46.16 18.61H67.51C69.3665 18.61 71.147 19.3475 72.4598 20.6602C73.7725 21.973 74.51 23.7535 74.51 25.61V34.7"
+            stroke="#020238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="icostroke" d="M46.14 25.77L67.53 57.51" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M67.53 25.77L46.14 57.51" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M40.53 101.97H73.15" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M40.53 109.23H56.84" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke"
+            d="M109.81 76.73H117.43C118.756 76.73 120.028 77.2568 120.966 78.1944C121.903 79.1321 122.43 80.4039 122.43 81.73V107.64C122.43 108.966 121.903 110.238 120.966 111.176C120.028 112.113 118.756 112.64 117.43 112.64H89.37C88.0439 112.64 86.7721 112.113 85.8345 111.176C84.8968 110.238 84.37 108.966 84.37 107.64V81.73C84.37 80.4039 84.8968 79.1321 85.8345 78.1944C86.7721 77.2568 88.0439 76.73 89.37 76.73H97.28"
+            stroke="#020238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="icostroke" d="M91.39 82.64L116.35 106.72" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke" d="M116.35 82.64L91.39 106.72" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke"
+            d="M69.28 41.64H93.95C96.6022 41.64 99.1457 42.6936 101.021 44.5689C102.896 46.4443 103.95 48.9878 103.95 51.64V83.72"
+            stroke="#020238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="icostroke"
+            d="M66.94 43.98C68.2324 43.98 69.28 42.9323 69.28 41.64C69.28 40.3476 68.2324 39.3 66.94 39.3C65.6477 39.3 64.6 40.3476 64.6 41.64C64.6 42.9323 65.6477 43.98 66.94 43.98Z"
+            stroke="#020238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="icostroke" d="M107.26 81.36L103.95 84.67L100.64 81.36" stroke="#020238" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <div class="itemtext">
+          <span class="weighted">UI</span> / UX</div>
+        </li>
+      <li id="itemstyle" class="item4">
+        <svg id="svganim" width="200" height="150" viewBox="0 0 150 150" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path id="icofill" opacity="0.1"
+            d="M18.32 57.09L18.32 112.98C18.32 118.503 22.7972 122.98 28.32 122.98H113.82C119.343 122.98 123.82 118.503 123.82 112.98V57.09C123.82 51.5671 119.343 47.09 113.82 47.09H28.32C22.7972 47.09 18.32 51.5671 18.32 57.09Z"
+            fill="#020238" />
+          <path
+            d="M45.44 90C48.1849 90 50.41 87.7749 50.41 85.03C50.41 82.2851 48.1849 80.06 45.44 80.06C42.6951 80.06 40.47 82.2851 40.47 85.03C40.47 87.7749 42.6951 90 45.44 90Z"
+            stroke="#FFF119" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="icostroke"
+            d="M113.21 56.37H121.94C124.592 56.37 127.136 57.4236 129.011 59.2989C130.886 61.1743 131.94 63.7178 131.94 66.37V103.7C131.94 106.352 130.886 108.896 129.011 110.771C127.136 112.646 124.592 113.7 121.94 113.7H68.56C65.9078 113.7 63.3643 112.646 61.4889 110.771C59.6136 108.896 58.56 106.352 58.56 103.7V66.37C58.56 63.7178 59.6136 61.1743 61.4889 59.2989C63.3643 57.4236 65.9078 56.37 68.56 56.37H99.47"
+            stroke="#020238" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path id="icostroke" d="M31.56 108.08V61.99" stroke="#020238" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path id="icostroke"
+            d="M108.33 27.31C108.33 26.1171 107.365 25.15 106.175 25.15C104.985 25.15 104.02 26.1171 104.02 27.31V75.92C104.02 77.113 104.985 78.08 106.175 78.08C107.365 78.08 108.33 77.113 108.33 75.92V27.31Z"
+            stroke="#020238" stroke-width="2" stroke-miterlimit="10" />
+          <path id="icostroke"
+            d="M108.33 83.99C108.33 82.7971 107.365 81.83 106.175 81.83C104.985 81.83 104.02 82.7971 104.02 83.99V85.29C104.02 86.483 104.985 87.45 106.175 87.45C107.365 87.45 108.33 86.483 108.33 85.29V83.99Z"
+            stroke="#020238" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+        <div class="itemtext"><span class="weighted">Art</span><br> & Illustration</div>
+      </li>
+     </ul>
+    <div class="show">
+    <div class="content">
+      <div class="con-cards">
+      <div class="card">
+        
+        <div id="img1" class="showimage-wrapper">
+          
+        </div>
+        <p class="desc">This is describing about background and intro of the project and is sedang dalam pembangunan. ;p stay tune</p>
+        <div class="showtext-wrapper">
+          <h3>KA Logistic Rebrand</h3>
+          <p>
+            2019
+          </p>
+         
+        </div>
+        
+      </div>
+      <div class="card">
+        <div id="img2" class="showimage-wrapper">
+        </div>
+        <div class="showtext-wrapper">
+          <h3>Pulau Bidadari Rebrand</h3>
+          <p>
+            2019
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div id="img3" class="showimage-wrapper">
+        </div>
+        <div class="showtext-wrapper">
+          <h3>Legend of Prada Illustration</h3>
+          <p>
+            2020
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div id="img4" class="showimage-wrapper">
+        </div>
+        <div class="showtext-wrapper">
+          <h3>INAGI Product Catalogue</h3>
+          <p>
+            2020
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="showimage-wrapper">
+          image here
+        </div>
+        <div class="showtext-wrapper">
+          <h3>Title</h3>
+          <p>
+            year
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="showimage-wrapper">
+          image here
+        </div>
+        <div class="showtext-wrapper">
+          <h3>Title</h3>
+          <p>
+            year
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="showimage-wrapper">
+          image here
+        </div>
+        <div class="showtext-wrapper">
+          <h3>Title</h3>
+          <p>
+            year
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="showimage-wrapper">
+          image here
+        </div>
+        <div class="showtext-wrapper">
+          <h3>Title</h3>
+          <p>
+            year
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="showimage-wrapper">
+          image here
+        </div>
+        <div class="showtext-wrapper">
+          <h3>Title</h3>
+          <p>
+            year
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="showimage-wrapper">
+          image here
+        </div>
+        <div class="showtext-wrapper">
+          <h3>Title</h3>
+          <p>
+            year
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+ 
+    <footer class="footer-container">
+      <div class="links-wrapper">
+        <a class="mail" onclick="Email()">
+          <svg id="clickable" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="btnov" opacity="0"
+              d="M18.8 0H8.3C3.7 0 0 3.70001 0 8.40001V17.1C0 21.7 3.7 25.4 8.3 25.4H18.8C23.4 25.4 27.2 21.7 27.2 17.1V8.40001C27.1 3.70001 23.4 0 18.8 0Z"
+              fill="white" />
+            <path id="inv"
+              d="M6.8 18.4C6.3 18.4 5.89999 18 5.89999 17.5V8.50002C5.89999 8.00002 6.3 7.90002 6.8 7.90002C7.3 7.90002 7.8 8.00002 7.8 8.50002V18.4H6.8Z"
+              fill="white" />
+            <path id="inv"
+              d="M20.1 18.4H19.1V8.50002C19.1 8.00002 19.5 7.90002 20.1 7.90002C20.7 7.90002 21 8.00002 21 8.50002V17.5C21 18 20.6 18.4 20.1 18.4Z"
+              fill="white" />
+            <path id="inv"
+              d="M13.4 11.9999L19.5 7.79992C19.9 7.49992 20.5 7.59992 20.8 7.99992C21.1 8.39992 21 8.99992 20.6 9.19992L13.4 14.0999"
+              fill="white" />
+            <path id="inv"
+              d="M13.5 11.9999L7.4 7.79992C7 7.49992 6.4 7.59992 6.1 7.99992C5.8 8.39992 5.90001 8.99992 6.30001 9.19992L13.5 14.0999"
+              fill="white" />
+            <path id="inv" d="M19.3 17.6H7.59999V18.4H19.3V17.6Z" fill="white" />
+            <path id="inv" d="M20.1 7.59998H6.8V8.39998H20.1V7.59998Z" fill="white" />
+          </svg>
+
+        </a>
+        <a class="tele" onclick="Telegram()">
+          <svg id="clickable" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="btnov" opacity="0"
+              d="M19.4 0H8.89999C4.29999 0 0.599991 3.7 0.599991 8.3V17C0.599991 21.6 4.29999 25.3 8.89999 25.3H19.4C24 25.3 27.7 21.6 27.7 17V8.3C27.7 3.7 24 0 19.4 0Z"
+              fill="white" />
+            <path id="inv"
+              d="M11.9 14.9L17.4 18.7C18 19 18.5 18.9 18.6 18.2L20.9 8.30003C21.1 7.40003 20.5 7.00003 19.9 7.30003L6.7 12.1C5.8 12.4 5.8 12.9 6.5 13.1L9.9 14.1L17.8 9.50003C18.2 9.30003 18.5 9.40003 18.2 9.60003"
+              fill="white" />
+          </svg>
+
+        </a>
+        <a class="linkedin" onclick="LinkedIn()">
+          <svg id="clickable" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="btnov" opacity="0"
+              d="M19 0H8.49998C3.89998 0 0.0999756 3.70001 0.0999756 8.40001V17.1C0.0999756 21.7 3.79998 25.4 8.49998 25.4H19C23.6 25.4 27.4 21.7 27.4 17.1V8.40001C27.4 3.70001 23.6 0 19 0Z"
+              fill="white" />
+            <path id="inv"
+              d="M19.2 6.5H8.19998C7.69998 6.5 7.19998 6.90001 7.19998 7.40001V17.8C7.19998 18.3 7.59998 18.7 8.19998 18.7H19.2C19.7 18.7 20.2 18.3 20.2 17.8V7.5C20.2 6.9 19.7 6.5 19.2 6.5ZM11 16.9H9.09998V11.1H11V16.9ZM10.1 10.3C9.49998 10.3 8.99998 9.8 8.99998 9.3C8.99998 8.7 9.49998 8.3 10.1 8.3C10.7 8.3 11.2 8.8 11.2 9.3C11.2 9.8 10.7 10.3 10.1 10.3ZM18.2 16.8H16.3V14C16.3 13.3 16.3 12.5 15.3 12.5C14.3 12.5 14.1 13.2 14.1 14V16.9H12.2V11.2H14V12C14.3 11.5 14.9 11.1 15.8 11.1C17.7 11.1 18.1 12.3 18.1 13.9V16.8H18.2Z"
+              fill="white" />
+          </svg>
+
+        </a>
+        <a class="behance" onclick="Behance()">
+          <svg id="clickable" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="btnov" opacity="0"
+              d="M19.4 0H8.90002C4.30002 0 0.5 3.70001 0.5 8.40001V17.1C0.5 21.7 4.20002 25.4 8.90002 25.4H19.4C24 25.4 27.8 21.7 27.8 17.1V8.40001C27.7 3.70001 24 0 19.4 0Z"
+              fill="white" />
+            <path id="inv"
+              d="M11 8.60001C11.4 8.60001 11.8 8.6 12.1 8.7C12.4 8.8 12.7 8.9 13 9C13.2 9.1 13.4 9.30001 13.5 9.60001C13.6 9.80001 13.7 10.2 13.7 10.5C13.7 10.9 13.6 11.2 13.4 11.5C13.2 11.8 12.9 12 12.5 12.2C13 12.3 13.4 12.6 13.7 12.9C14 13.3 14.1 13.7 14.1 14.2C14.1 14.6 14 14.9 13.9 15.2C13.7 15.5 13.5 15.7 13.2 15.9C12.9 16.1 12.6 16.2 12.2 16.3C11.8 16.4 11.5 16.4 11.1 16.4H7V8.5H11V8.60001ZM10.8 11.8C11.1 11.8 11.4 11.7 11.6 11.6C11.8 11.5 11.9 11.2 11.9 10.9C11.9 10.7 11.9 10.6 11.8 10.5C11.7 10.4 11.6 10.3 11.5 10.2C11.4 10.1 11.2 10.1 11.1 10.1C10.9 10.1 10.8 10.1 10.6 10.1H8.90002V11.9H10.8V11.8ZM10.9 15.2C11.1 15.2 11.3 15.2 11.4 15.2C11.6 15.2 11.7 15.1 11.8 15C11.9 14.9 12 14.8 12.1 14.7C12.2 14.6 12.2 14.4 12.2 14.2C12.2 13.8 12.1 13.5 11.8 13.3C11.6 13.1 11.2 13 10.8 13H8.80002V15.2H10.9Z"
+              fill="white" />
+            <path id="inv"
+              d="M16.8 15.2C17 15.4 17.4 15.5 17.9 15.5C18.2 15.5 18.5 15.4 18.8 15.3C19 15.1 19.2 15 19.2 14.8H20.7C20.5 15.5 20.1 16 19.6 16.3C19.1 16.6 18.5 16.7 17.8 16.7C17.3 16.7 16.9 16.6 16.5 16.5C16.1 16.4 15.8 16.2 15.5 15.9C15.2 15.6 15 15.3 14.9 14.9C14.8 14.5 14.7 14.1 14.7 13.7C14.7 13.3 14.8 12.9 14.9 12.5C15.1 12.1 15.3 11.8 15.5 11.5C15.8 11.2 16.1 11 16.5 10.9C16.9 10.7 17.3 10.7 17.8 10.7C18.3 10.7 18.8 10.8 19.2 11C19.6 11.2 19.9 11.4 20.2 11.8C20.4 12.1 20.6 12.5 20.7 12.9C20.8 13.3 20.9 13.7 20.8 14.2H16.4C16.4 14.5 16.5 14.9 16.8 15.2ZM18.7 12.2C18.5 12 18.2 11.9 17.8 11.9C17.5 11.9 17.3 11.9 17.1 12C16.9 12.1 16.8 12.2 16.7 12.3C16.6 12.4 16.5 12.6 16.5 12.7C16.5 12.8 16.4 13 16.4 13.1H19.1C19.1 12.7 18.9 12.4 18.7 12.2Z"
+              fill="white" />
+            <path id="inv" d="M19.4 9.19995H16V9.99995H19.4V9.19995Z" fill="white" />
+          </svg>
+        </a>
+        <a class="dribbble" onclick="Dribbble()">
+          <svg id="clickable" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="btnov" opacity="0"
+              d="M19.2 0H8.69998C4.09998 0 0.299988 3.70001 0.299988 8.40001V17.1C0.299988 21.7 3.99998 25.4 8.69998 25.4H19.2C23.8 25.4 27.5 21.7 27.5 17.1V8.40001C27.6 3.70001 23.9 0 19.2 0Z"
+              fill="white" />
+            <path id="inv"
+              d="M13.8 4.90002C9.19999 4.90002 5.49997 8.40001 5.49997 12.7C5.49997 17 9.19999 20.5 13.8 20.5C18.4 20.5 22.1 17 22.1 12.7C22.1 8.40001 18.4 4.90002 13.8 4.90002ZM19.3 8.50002C20.3 9.60002 20.9 11.1 20.9 12.6C20.7 12.6 18.3 12.1 16 12.4C15.9 12.3 15.9 12.2 15.9 12.1C15.8 11.8 15.6 11.5 15.4 11.1C17.9 10.1 19.1 8.70002 19.3 8.50002ZM13.8 6.00002C15.6 6.00002 17.2 6.60001 18.5 7.70001C18.4 7.90001 17.3 9.20002 14.8 10.1C13.6 8.10002 12.3 6.50001 12.2 6.20001C12.7 6.10001 13.2 6.00002 13.8 6.00002ZM10.8 6.70001C11 6.90001 12.3 8.60002 13.4 10.5C10.1 11.3 7.19999 11.3 6.79999 11.3C7.29999 9.30002 8.79999 7.50001 10.8 6.70001ZM6.69998 12.7C6.69998 12.6 6.69998 12.6 6.69998 12.5C6.99998 12.5 10.4 12.5 14 11.6C14.2 12 14.4 12.3 14.6 12.7C14.5 12.7 14.4 12.7 14.3 12.8C10.6 13.9 8.69997 16.9 8.49997 17.2C7.39997 15.9 6.69998 14.4 6.69998 12.7ZM13.8 19.3C12.2 19.3 10.6 18.8 9.39999 17.9C9.49999 17.7 11 15.1 15 13.8C16 16.2 16.4 18.2 16.5 18.8C15.7 19.1 14.8 19.3 13.8 19.3ZM17.8 18.2C17.7 17.8 17.4 15.9 16.4 13.5C18.6 13.2 20.6 13.7 20.8 13.8C20.5 15.6 19.3 17.2 17.8 18.2Z"
+              fill="white" />
+          </svg>
+        </a>
+        <a class="ig" onclick="Instagram()">
+          <svg id="clickable" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <path id="btnov" opacity="0"
+              d="M18.8 0H8.30002C3.70002 0 0 3.70001 0 8.40001V17.1C0 21.7 3.70002 25.4 8.30002 25.4H18.8C23.4 25.4 27.2 21.7 27.2 17.1V8.40001C27.1 3.70001 23.4 0 18.8 0Z"
+              fill="white" />
+
+
+            <path id="inv"
+              d="M11 12.7C11 11.3 12.2 10.2 13.7 10.2C15.2 10.2 16.4 11.3 16.4 12.7C16.4 14.1 15.2 15.2 13.7 15.2C12.2 15.2 11 14 11 12.7ZM9.60001 12.7C9.60001 14.8 11.4 16.5 13.7 16.5C16 16.5 17.8 14.8 17.8 12.7C17.8 10.6 16 8.89996 13.7 8.89996C11.4 8.79996 9.60001 10.5 9.60001 12.7ZM17 8.69995C17 9.19995 17.4 9.59996 18 9.59996C18.5 9.59996 19 9.19995 19 8.69995C19 8.19995 18.6 7.79996 18 7.79996C17.4 7.79996 17 8.19995 17 8.69995ZM10.5 18.7C9.7 18.7 9.3 18.5 9 18.4C8.6 18.3 8.40001 18.1 8.10001 17.8C7.80001 17.5 7.6 17.3 7.5 16.9C7.4 16.6 7.30001 16.2 7.20001 15.5C7.20001 14.7 7.20001 14.5 7.20001 12.5C7.20001 10.5 7.20001 10.3 7.20001 9.49995C7.20001 8.79995 7.4 8.39996 7.5 8.09996C7.6 7.79996 7.80001 7.49995 8.10001 7.19995C8.40001 6.89995 8.6 6.79996 9 6.59996C9.3 6.49996 9.7 6.39996 10.5 6.29996C11.3 6.29996 11.6 6.29996 13.7 6.29996C15.8 6.29996 16.1 6.29996 16.9 6.29996C17.7 6.29996 18.1 6.49996 18.4 6.59996C18.8 6.69996 19 6.89995 19.3 7.19995C19.6 7.49995 19.7 7.69996 19.9 8.09996C20 8.39996 20.1 8.79995 20.2 9.49995C20.2 10.3 20.2 10.5 20.2 12.5C20.2 14.5 20.2 14.7 20.2 15.5C20.2 16.2 20 16.6 19.9 16.9C19.8 17.2 19.6 17.5 19.3 17.8C19 18.1 18.8 18.2 18.4 18.4C18.1 18.5 17.7 18.6 16.9 18.7C16.1 18.7 15.8 18.7 13.7 18.7C11.6 18.8 11.3 18.8 10.5 18.7ZM10.4 5.19995C9.50002 5.19995 9 5.39995 8.5 5.49995C8 5.69995 7.50001 5.89996 7.10001 6.39996C6.70001 6.79996 6.40001 7.19995 6.20001 7.69995C6.00001 8.19995 5.90002 8.69995 5.80002 9.49995C5.80002 10.3 5.80002 10.6 5.80002 12.6C5.80002 14.6 5.80002 14.9 5.80002 15.7C5.80002 16.5 6.00001 17 6.20001 17.5C6.40001 18 6.70001 18.4 7.10001 18.8C7.50001 19.2 8 19.5 8.5 19.7C9 19.9 9.60002 20 10.4 20C11.3 20 11.5 20 13.7 20C15.9 20 16.1 20 17 20C17.9 20 18.4 19.8 18.9 19.7C19.4 19.5 19.9 19.3 20.3 18.8C20.7 18.4 21 18 21.2 17.5C21.4 17 21.5 16.5 21.6 15.7C21.6 14.9 21.6 14.6 21.6 12.6C21.6 10.6 21.6 10.3 21.6 9.49995C21.6 8.69995 21.4 8.19995 21.2 7.69995C21 7.19995 20.7 6.79996 20.3 6.39996C19.9 5.99996 19.4 5.69995 18.9 5.49995C18.4 5.29995 17.8 5.19995 17 5.19995C16.2 5.19995 15.9 5.19995 13.7 5.19995C11.5 5.19995 11.2 5.19995 10.4 5.19995Z"
+              fill="white" />
+          </svg>
+
+        </a>
+        <a class="issuuu" onclick="Issuu()">
+          <svg id="clickable" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+            <path id="btnov" opacity="0"
+              d="M19.3 0H8.80002C4.20002 0 0.400024 3.70001 0.400024 8.40001V17.1C0.400024 21.7 4.10002 25.4 8.80002 25.4H19.3C23.9 25.4 27.6 21.7 27.6 17.1V8.40001C27.7 3.70001 23.9 0 19.3 0Z"
+              fill="white" />
+
+            <path id="inv"
+              d="M14.7 9.70007C12.6 9.70007 10.9 11.3001 10.9 13.2001C10.9 15.1001 12.6 16.8001 14.7 16.8001C16.8 16.8001 18.5 15.2001 18.5 13.3001C18.5 11.4001 16.8 9.70007 14.7 9.70007C12.6 9.70007 16.8 9.70007 14.7 9.70007ZM14.7 15.1001C12.2 15.1001 12.3 11.5001 14.7 11.5001C17.2 11.5001 17.2 15.1001 14.7 15.1001C13.6 15.1001 15.7 15.1001 14.7 15.1001Z"
+              fill="white" />
+            <path id="inv"
+              d="M14.6 6.30005C12.3 6.30005 10 6.30005 7.70001 6.30005C7.40001 6.30005 7.10001 6.60005 7.10001 6.90005C7.10001 9.10005 7.10001 11.2001 7.10001 13.4001C7.10001 18.0001 11.9 21.4 16.7 20.2C21.4 19 23.7 13.8 21.2 9.80005C19.8 7.60005 17.3 6.30005 14.6 6.30005ZM9.40002 13.2C9.40002 10.5 11.8 8.30005 14.7 8.30005C17.6 8.30005 19.9 10.6 19.9 13.2C19.9 15.9 17.5 18.1001 14.6 18.1001C11.8 18.2001 9.40002 15.9 9.40002 13.2C9.50002 10.5 9.40002 15.9 9.40002 13.2Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+  </div>
+  </footer>
+
+  </div>
+</body>
+
+<body>
+  <!-- partial -->
+
+  <script type="text/javascript" src="./src/js/script.js"></script>
+  
+
+  <script>
+    const slider = document.querySelector('.con-cards');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; //scroll-fast
+  slider.scrollLeft = scrollLeft - walk;
+  console.log(walk);
+});
+
+  </script>
+  <script>
+
+
+
+  </script>
+
+</body>
+
+</html>
